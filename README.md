@@ -5,6 +5,6 @@
  * Côté client : ReactJS
  * Côté serveur : Spring
 ## Partie Server 
-### Dependicies 
+### Dependencies 
 
  
