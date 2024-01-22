@@ -74,6 +74,7 @@ public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilte
         Map<String, String> tokens = new HashMap<>();
         tokens.put("access_token", jwtAccessToken);
         tokens.put("refresh_token", jwtRefreshToken);
+        tokens.put("user",user.getUsername());
         response.setContentType("application/json");
         new ObjectMapper().writeValue(response.getOutputStream(), tokens);
     }
